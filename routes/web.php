@@ -15,7 +15,11 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+/*Route::get('/',function() {
+    return view('posts.index');
+});*/
 Route::get('/',[PostController::class,'index']);
+Route::get('/posts/{post}',[PostController::class,'show']);
+//'/posts/{対象データのID}'にGetリクエストがきたら、[PostControllerの'show'メソッド]を実行する

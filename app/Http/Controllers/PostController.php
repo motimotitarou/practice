@@ -39,4 +39,8 @@ class PostController extends Controller
         //'post'はbladeファイルで使う変数。中身は$post  id=1のPostインスタンス
         
     }
+    public function create()
+    {
+        return view('posts.create');
+    }
 }

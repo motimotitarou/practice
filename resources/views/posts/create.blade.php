@@ -7,13 +7,14 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     
+    <body>
     <h1>Blog</h1>
-    <body class="antialiased">
+    
        <form action="/posts" method="POST">
            @csrf
            <div class="title">
                <h2>Title<h2>
-           <input type="text" name"post[title]" placeholder="タイトル"/>
+                    <input type="text" name="post[title]" placeholder="タイトル"/>
            </div>
            <div class="body">
                <h2>Body</h2>

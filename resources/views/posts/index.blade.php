@@ -18,7 +18,7 @@
             </div>
             @endforeach
         </div>
-        <a href='/posts/create'>create</a>
+        <a href='/posts/create'>投稿作成</a>
         <div class='paginate'>
             {{ $posts->links()}}
         </div>
